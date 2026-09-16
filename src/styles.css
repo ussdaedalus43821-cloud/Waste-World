@@ -227,3 +227,51 @@ body {
 .reveal-rate-value.reported { color: var(--ok); }
 .reveal-rate-value.true-rate { color: var(--accent); }
 .reveal-reasons { padding-left: 20px; line-height: 1.6; }
+
+.quiz-layout { grid-template-columns: 1fr; max-width: 640px; margin: 0 auto; }
+.quiz-progress { text-align: center; color: var(--muted); font-size: 0.85rem; margin-bottom: 6px; }
+.quiz-prompt { font-size: 1.15rem; line-height: 1.4; }
+.quiz-options { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+.quiz-option-btn { flex-direction: row; justify-content: center; padding: 12px; font-size: 1rem; }
+.quiz-note { text-align: center; margin-top: 14px; }
+
+.quiz-reveal h2, .final-report h2 { margin-top: 0; }
+.quiz-score { font-size: 2rem; font-weight: 800; color: var(--accent); text-align: center; margin: 8px 0; }
+.quiz-reveal-list { display: flex; flex-direction: column; gap: 14px; margin: 18px 0; }
+.quiz-reveal-row {
+  background: var(--panel-2);
+  border-radius: 8px;
+  padding: 14px;
+  border-left: 3px solid var(--border);
+}
+.quiz-row-correct { border-left-color: var(--correct); }
+.quiz-row-wrong { border-left-color: var(--wrong); }
+.quiz-reveal-prompt { font-weight: 600; margin-bottom: 8px; }
+.quiz-reveal-answers { display: flex; flex-direction: column; gap: 2px; font-size: 0.85rem; margin-bottom: 8px; }
+.quiz-your-answer { color: var(--muted); }
+.quiz-correct-answer { color: var(--correct); font-weight: 600; }
+.quiz-misconception { font-size: 0.9rem; color: var(--ok); margin-bottom: 6px; line-height: 1.5; }
+.quiz-explanation { font-size: 0.9rem; line-height: 1.5; }
+
+.final-report { max-width: 640px; }
+.muted.small { font-size: 0.75rem; }
+.fragmentation-note {
+  background: var(--panel-2);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 18px 0;
+  line-height: 1.6;
+}
+.fragmentation-note h3 { margin-top: 0; }
+
+.report-btn {
+  width: 100%;
+  background: var(--panel-2);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.report-btn:hover { background: #1c2a29; }

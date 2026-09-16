@@ -165,3 +165,21 @@ export interface FeedbackEvent {
   purityDelta?: { stream: Stream; before: number; after: number };
   valueRecovered?: string;
 }
+
+export interface QuizQuestion {
+  id: string;
+  prompt: string;
+  options: string[];
+  correctIndex: number;
+  /** Framed as "here's probably what you picked, and why" — revealed only after
+   * the player has already answered, never before. */
+  commonMisconception: string;
+  explanation: string;
+  factCitation: string;
+  citationVerified: boolean;
+}
+
+export interface QuizAnswer {
+  questionId: string;
+  chosenIndex: number;
+}
