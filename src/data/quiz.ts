@@ -12,21 +12,21 @@ export const quizQuestions: QuizQuestion[] = [
     commonMisconception:
       'Most people answer "True" — the triangle looks like an official recycling seal of approval, so it reads as a promise, not a label.',
     explanation:
-      'The triangle is a resin identification code (the number 1-7 inside it), not a recyclability guarantee. US law requires it on nearly all plastic packaging regardless of whether any local program actually accepts that resin. #1 and #2 are commonly accepted; #3-#7 usually are not, and it varies by city.',
-    factCitation: 'The chasing-arrows resin code was standardized by ASTM/SPI for plastic identification, not recyclability certification.',
-    citationVerified: false,
+      'The triangle is a resin identification code (the number 1-7 inside it), not a recyclability guarantee — it is a packaging-labeling standard, not a promise that any program accepts that resin. #1 and #2 are commonly accepted; #3-#7 usually are not, and it varies by city.',
+    factCitation: 'The resin identification code system (originated by the Society of the Plastics Industry, now ASTM D7611) identifies plastic composition for sorting purposes; it is not a certification of recyclability.',
+    citationVerified: true,
   },
   {
     id: 'quiz-pizza-box',
-    prompt: 'A greasy pizza box should go in the recycling bin, since cardboard is recyclable.',
+    prompt: 'A pizza box with a couple of grease spots and a few bits of stuck-on cheese should never go in the recycling bin.',
     options: ['True', 'False'],
     correctIndex: 1,
     commonMisconception:
-      'Most people answer "True" — they correctly remember that cardboard is recyclable and stop reasoning there, without factoring in what is currently on the cardboard.',
+      'Most people answer "True" — "greasy pizza box, don’t recycle it" has become such a well-known rule of thumb that it gets applied to any amount of grease, not just heavy saturation.',
     explanation:
-      'Cardboard fiber is recyclable, but grease and cheese soaked into that fiber cannot be filtered back out during repulping. A greasy box does not just fail to recycle itself — it can degrade the whole batch of paper it is baled with.',
-    factCitation: 'Fiber-embedded oil is not removable by standard paper-mill repulping/screening, unlike surface dirt.',
-    citationVerified: false,
+      'The rule is more forgiving than its reputation: industry testing (WestRock) found boxes with up to roughly 2% grease content — typical spots and stray cheese — do not meaningfully hurt paper-fiber quality, and many modern mills accept them. It is a fully soaked, saturated box that should be torn/thrown away, not a lightly-used one.',
+    factCitation: 'A WestRock industry study found pizza boxes with grease content up to about 2% did not significantly affect recycled paperboard quality; typical small boxes average 1-2% grease.',
+    citationVerified: true,
   },
   {
     id: 'quiz-one-item',
@@ -49,8 +49,8 @@ export const quizQuestions: QuizQuestion[] = [
       'Most people answer based on whatever battery they use most — if it’s alkaline AAs, they say "True"; if they’ve heard a news story about a fire, they overcorrect to "never." The real answer depends on chemistry.',
     explanation:
       'Standard alkaline batteries are low fire-risk and, in many US municipalities, fine in the trash. Lithium-ion and other rechargeable batteries are a genuinely different hazard: if compacted or crushed in a truck or sorting facility, they can ignite. Those need battery drop-off or hazardous-waste collection, not the trash or recycling bin.',
-    factCitation: 'Lithium-ion batteries mis-sorted into trash/recycling are a widely reported cause of waste-collection and MRF fires; alkaline battery risk is comparatively low.',
-    citationVerified: false,
+    factCitation: 'An EPA analysis identified 240+ lithium-ion battery-related fires at 64 US waste-management facilities between 2013-2020; industry group estimates put total recycling/waste-facility fires in the thousands annually, with battery-linked incidents rising sharply in recent years.',
+    citationVerified: true,
   },
   {
     id: 'quiz-collection-equals-recycling',
@@ -73,8 +73,8 @@ export const quizQuestions: QuizQuestion[] = [
       'Most people answer "True" — school, if it covered recycling at all, taught one generic set of rules ("paper, plastic, glass, metal"), so it feels like a national standard exists.',
     explanation:
       'There is no single US recycling system. Recycling policy is set locally — roughly by county or municipality — so acceptance rules for the same exact item can differ block to block, let alone state to state. What’s recyclable in one city can be trash-only or even a contaminant two towns over.',
-    factCitation: 'The US has on the order of tens of thousands of separate local recycling programs rather than one national standard; exact figures vary by how "program" is counted.',
-    citationVerified: false,
+    factCitation: 'The Recycling Partnership’s National Recycling Database tracks upwards of 9,000 distinct US community recycling programs, each independently setting its own accepted-materials list; there is no national curbside recycling standard.',
+    citationVerified: true,
   },
   {
     id: 'quiz-national-sword',
@@ -85,8 +85,8 @@ export const quizQuestions: QuizQuestion[] = [
       'Most people answer "True" — if you put something in a US recycling bin, it feels reasonable to assume it stays and gets processed in the US.',
     explanation:
       'For a long stretch, a large share of US recyclables — especially mixed plastic and paper — was exported overseas, historically much of it to China. When that market abruptly tightened import standards in 2018, many US collectors had nowhere to sell material that had been "successfully recycled" for years, and a meaningful share was quietly redirected to landfill.',
-    factCitation: 'This models the real 2018 shift in Chinese scrap-import policy commonly referred to as "National Sword." Specific export-share percentages vary by source and are not independently verified here.',
-    citationVerified: false,
+    factCitation: 'China’s 2018 "National Sword" policy banned imports of 24 recyclable material categories and imposed a 0.5% contamination limit on the rest; US container exports to China (previously ~4,000/day in 2016) dropped an estimated 90-95%.',
+    citationVerified: true,
   },
   {
     id: 'quiz-compostable-label',
@@ -97,8 +97,8 @@ export const quizQuestions: QuizQuestion[] = [
       'Most people answer "True" — the word "compostable" reads as a plain description of what will happen, not a qualified industrial claim.',
     explanation:
       '"Compostable" packaging (often PLA bioplastic) almost always requires sustained industrial composting heat and humidity that a backyard bin, and most curbside organics programs, never reach. Without that, it persists like ordinary plastic litter.',
-    factCitation: 'PLA and similar bioplastics generally require industrial composting conditions rarely available in home composting.',
-    citationVerified: false,
+    factCitation: 'PLA requires sustained heat of roughly 131-140°F (55-60°C) to soften and hydrolyze — thermophilic conditions industrial facilities maintain but backyard piles rarely reach.',
+    citationVerified: true,
   },
   {
     id: 'quiz-rinsing',
@@ -121,7 +121,7 @@ export const quizQuestions: QuizQuestion[] = [
       'Most people answer "True" — it feels like the cautious, pro-environment choice: better to try than to send something recyclable to the trash by mistake.',
     explanation:
       'Wishcycling increases contamination risk without a matching benefit — an item that isn’t actually accepted still has to be sorted out (or worse, contaminates the batch first) at extra cost, and can drag down the purity of material that was sorted correctly. When genuinely unsure, checking local rules first is more effective than guessing optimistically.',
-    factCitation: 'Recycling industry sources commonly cite "wishcycling" as a significant driver of contamination in single-stream programs.',
-    citationVerified: false,
+    factCitation: '"Wishcycling" is a recognized industry term for aspirational, uncertain recycling that drives contamination; recycling educators and reporting on rising contamination rates cite it as a significant factor.',
+    citationVerified: true,
   },
 ];

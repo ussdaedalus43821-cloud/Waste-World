@@ -7,14 +7,12 @@ export const miscItems: WasteItem[] = [
     category: 'other', correctStream: 'trash', material: 'textiles',
     explanation: 'Gum is a synthetic polymer that does not compost or recycle — always trash.',
     factCitation: 'Modern chewing gum base is a synthetic rubber/plastic blend, not a biodegradable material.',
-    citationVerified: false,
   }),
   w('misc', {
     name: 'Cigarette butt',
     category: 'other', correctStream: 'trash', material: 'textiles',
     explanation: 'Cigarette filters are made of cellulose acetate, a slow-degrading plastic — not recyclable or compostable curbside, and one of the most common litter items worldwide.',
     factCitation: 'Cigarette filters are commonly cited as the most littered item globally and are made of a plastic-derived material.',
-    citationVerified: false,
   }),
   w('misc', {
     name: 'Disposable diaper (used)',
@@ -59,7 +57,6 @@ export const miscItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'A genuinely natural-rubber band in small quantity can compost, but most household rubber bands today are synthetic — check before assuming.',
     factCitation: 'Natural rubber is biodegradable in industrial composting; most consumer rubber bands are synthetic blends, though.',
-    citationVerified: false,
   }),
   w('misc', {
     name: 'Mylar (foil) balloon, deflated',
@@ -81,7 +78,6 @@ export const miscItems: WasteItem[] = [
     category: 'other', correctStream: 'trash', material: 'mixed-plastics-3-7',
     explanation: 'Small, unmarked plastic item — not recyclable curbside.',
     factCitation: 'Small unlabeled plastic fasteners are broadly excluded from curbside plastic recycling.',
-    citationVerified: false,
   }),
   w('misc', {
     name: 'Synthetic kitchen sponge (worn out)',
@@ -95,7 +91,6 @@ export const miscItems: WasteItem[] = [
     category: 'other', correctStream: 'trash', material: 'mixed-plastics-3-7',
     explanation: 'Mixed plastic/nylon-bristle construction is not recyclable through standard curbside programs; a small number of brand take-back programs exist.',
     factCitation: 'Toothbrushes combine multiple plastic types in one small product, complicating recycling.',
-    citationVerified: false,
   }),
   w('misc', {
     name: 'Disposable razor (plastic handle, metal blade)',
@@ -117,7 +112,6 @@ export const miscItems: WasteItem[] = [
     contamination: FILM_JAM_CONTAM,
     explanation: 'Netting tangles in sorting equipment much like plastic bags and wire hangers.',
     factCitation: 'Netted plastic packaging is a commonly cited MRF tangling hazard.',
-    citationVerified: false,
   }),
   w('misc', {
     name: 'Bread bag twist tie (paper-coated wire)',
@@ -131,7 +125,6 @@ export const miscItems: WasteItem[] = [
     category: 'other', correctStream: 'trash', material: 'mixed-plastics-3-7',
     explanation: 'Same multi-layer laminate issue as full-size chip bags — not recyclable curbside.',
     factCitation: 'Metallized film snack wrappers are a common "wishcycled" item due to their shiny, foil-like appearance.',
-    citationVerified: false,
   }),
   w('misc', {
     name: 'Insulated pizza-delivery bag liner (foil-lined fabric, worn out)',
@@ -167,7 +160,6 @@ export const miscItems: WasteItem[] = [
     category: 'other', correctStream: 'trash', material: 'mixed-plastics-3-7',
     explanation: 'Despite looking sturdy/reusable, most disposable party plastic plates are unmarked or low-value resin and not curbside recyclable.',
     factCitation: 'Party/picnic disposable plasticware is a commonly "wishcycled" product category.',
-    citationVerified: false,
   }),
   w('misc', {
     name: 'Styrofoam cooler (cracked, being thrown out)',
@@ -175,7 +167,6 @@ export const miscItems: WasteItem[] = [
     municipalityVariance: 'rarely-accepted',
     explanation: 'Bulky EPS foam follows the same rule as foam cups and trays — essentially never curbside recyclable.',
     factCitation: 'Bulky foam items compound the general EPS foam recycling gap with size/volume problems for haulers.',
-    citationVerified: false,
   }),
   w('misc', {
     name: 'Bubble mailer envelope, mostly paper with a plastic bubble lining',
@@ -196,14 +187,12 @@ export const miscItems: WasteItem[] = [
     category: 'other', correctStream: 'trash', material: 'mixed-plastics-3-7',
     explanation: 'Paraffin wax crayons are not recyclable or compostable through standard household streams.',
     factCitation: 'Crayon wax is a petroleum-derived paraffin product not accepted in compost or recycling.',
-    citationVerified: false,
   }),
   w('misc', {
     name: 'Cotton swab (plastic stem)',
     category: 'other', correctStream: 'trash', material: 'mixed-plastics-3-7',
     explanation: 'Too small for sorting equipment and mixed material (cotton + plastic stem) — never flush, and not recyclable curbside.',
     factCitation: 'Plastic-stemmed cotton swabs are commonly named among items that should never be flushed.',
-    citationVerified: false,
   }),
   w('misc', {
     name: 'Cotton swab (paper stem, compostable variant)',
@@ -211,7 +200,6 @@ export const miscItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'A genuinely paper-stemmed swab can compost in municipal programs that accept it, unlike the plastic-stemmed version — packaging often does not make the fiber type obvious at a glance.',
     factCitation: 'Paper-stemmed cotton swabs are marketed specifically as a compostable alternative to plastic-stemmed ones.',
-    citationVerified: false,
   }),
   w('misc', {
     name: 'Wine cork (natural cork)',
@@ -226,7 +214,6 @@ export const miscItems: WasteItem[] = [
     category: 'other', correctStream: 'trash', material: 'mixed-plastics-3-7',
     explanation: 'Synthetic corks look identical to natural ones but are plastic, not compostable, and not curbside recyclable.',
     factCitation: 'Synthetic wine "corks" are typically an injection-molded plastic, unlike natural cork bark.',
-    citationVerified: false,
   }),
   w('misc', {
     name: 'Highlighter pen (dried out)',
@@ -240,7 +227,6 @@ export const miscItems: WasteItem[] = [
     category: 'other', correctStream: 'trash', material: 'mixed-plastics-3-7',
     explanation: 'Small mixed-material item with dried adhesive residue — not recyclable curbside.',
     factCitation: 'Adhesive-residue products are commonly excluded from plastic recycling instructions.',
-    citationVerified: false,
   }),
   w('misc', {
     name: 'Correction fluid bottle (dried out, empty)',
@@ -255,13 +241,11 @@ export const miscItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'A genuine paper straw composts where food-soiled paper is accepted; it is often confused with the plastic straws it was designed to replace.',
     factCitation: 'Paper straws are marketed as a compostable/biodegradable alternative to plastic straws.',
-    citationVerified: false,
   }),
   w('misc', {
     name: 'Plastic drinking straw (used)',
     category: 'other', correctStream: 'trash', material: 'mixed-plastics-3-7',
     explanation: 'Too small and thin for sorting equipment to capture — not recyclable curbside regardless of resin.',
     factCitation: 'Small thin plastic items are broadly excluded from curbside plastic recycling instructions.',
-    citationVerified: false,
   }),
 ];

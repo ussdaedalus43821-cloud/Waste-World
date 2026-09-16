@@ -31,7 +31,6 @@ const pet: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Many programs now take rigid PET clamshells, but some still reject them because their shape confuses optical sorters.',
     factCitation: 'PET thermoform (clamshell) acceptance varies by MRF sorting equipment, unlike bottle-grade PET which is almost universal.',
-    citationVerified: false,
   }),
   w('plastic', {
     name: 'PET mouthwash bottle (empty, rinsed)',
@@ -61,7 +60,6 @@ const pet: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Thin, brittle PET clamshells are recyclable in many places but often too lightweight for older optical sorters to catch.',
     factCitation: 'Thin-gauge PET packaging has lower/variable acceptance compared to bottle-grade PET.',
-    citationVerified: false,
   }),
 ];
 
@@ -95,7 +93,6 @@ const hdpe: WasteItem[] = [
     contamination: [{ intoStream: 'recycle', severity: 'major', reason: 'Residual motor oil is a petroleum contaminant that ruins food-grade plastic bales even in small amounts.' }],
     explanation: 'The empty bottle is HDPE, but many programs still reject it since any oil residue is very hard to fully drain.',
     factCitation: 'Some municipalities exclude motor oil containers from curbside recycling regardless of resin code.',
-    citationVerified: false,
   }),
   w('plastic', {
     name: 'HDPE yogurt tub (large, empty, rinsed)',
@@ -135,7 +132,6 @@ const pvc: WasteItem[] = [
     municipalityVariance: 'rarely-accepted',
     explanation: 'PVC (#3) is almost never accepted curbside — it can off-gas corrosive chlorine compounds if it contaminates a PET/HDPE reprocessing batch.',
     factCitation: 'PVC is widely considered one of the least recyclable common plastics and is explicitly excluded by most MRFs.',
-    citationVerified: false,
   }),
   w('plastic', {
     name: '#3 PVC shower curtain liner',
@@ -143,7 +139,6 @@ const pvc: WasteItem[] = [
     municipalityVariance: 'rarely-accepted',
     explanation: 'Despite the arrows symbol, #3 PVC shower liners are not curbside recyclable in almost any US municipality.',
     factCitation: 'PVC film products are excluded from virtually all residential single-stream programs.',
-    citationVerified: false,
   }),
   w('plastic', {
     name: '#3 PVC blister pack (pill/toy packaging)',
@@ -151,7 +146,6 @@ const pvc: WasteItem[] = [
     municipalityVariance: 'rarely-accepted',
     explanation: 'Rigid clamshell "blister" packaging is frequently PVC and rarely recyclable curbside.',
     factCitation: 'Blister-pack resin varies by manufacturer; many are PVC or PVC-laminated.',
-    citationVerified: false,
   }),
   w('plastic', {
     name: '#3 PVC vinyl siding scrap',
@@ -159,7 +153,6 @@ const pvc: WasteItem[] = [
     municipalityVariance: 'rarely-accepted',
     explanation: 'Construction-grade PVC needs a specialty recycler, not curbside pickup.',
     factCitation: 'Rigid PVC building materials generally require dedicated take-back or C&D recycling programs.',
-    citationVerified: false,
   }),
   w('plastic', {
     name: '#3 PVC garden hose (old, cracked)',
@@ -204,7 +197,6 @@ const ldpe: WasteItem[] = [
     contamination: FILM_JAM_CONTAM,
     explanation: 'Large sheets of shrink wrap are even more prone to jamming than small bags.',
     factCitation: 'Larger film pieces increase the chance of wrapping fully around a rotating shaft.',
-    citationVerified: false,
   }),
   w('plastic', {
     name: '#4 LDPE sandwich bag (used)',
@@ -220,7 +212,6 @@ const ldpe: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Rigid-ish LDPE squeeze bottles are sometimes accepted, but the resin is generally lower-value and inconsistently collected.',
     factCitation: 'LDPE bottle acceptance is markedly less consistent across US municipalities than PET/HDPE.',
-    citationVerified: false,
   }),
   w('plastic', {
     name: '#4 LDPE bubble wrap',
@@ -247,7 +238,6 @@ const pp: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Small rigid PP items are frequently rejected by sorters even where PP is nominally accepted, due to their size.',
     factCitation: 'Items smaller than roughly 2 inches often fall through MRF screens into the wrong stream regardless of resin.',
-    citationVerified: false,
   }),
   w('plastic', {
     name: '#5 PP ketchup bottle (squeeze, empty & rinsed)',
@@ -255,7 +245,6 @@ const pp: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Same PP-acceptance uncertainty as yogurt cups — check local rules rather than assuming from the symbol.',
     factCitation: 'PP condiment bottles are a commonly cited "wishcycled" item.',
-    citationVerified: false,
   }),
   w('plastic', {
     name: '#5 PP plastic bottle caps (loose, off the bottle)',
@@ -263,7 +252,6 @@ const pp: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Loose caps are small enough to fall through sorting screens and get lost to residue/landfill even in PP-accepting cities — leaving caps on the (correctly sorted) bottle is usually recommended instead.',
     factCitation: 'Many recycling programs specifically instruct residents to leave small caps attached to their bottle rather than loose.',
-    citationVerified: false,
   }),
   w('plastic', {
     name: '#5 PP food container with lid (deli container, empty & rinsed)',
@@ -278,7 +266,6 @@ const pp: WasteItem[] = [
     municipalityVariance: 'rarely-accepted',
     explanation: 'Straws are almost universally too small and lightweight for sorting equipment to capture, even in PP-friendly cities.',
     factCitation: 'Small, thin plastic items are commonly excluded from recycling instructions regardless of resin type.',
-    citationVerified: false,
   }),
   w('plastic', {
     name: '#5 PP reusable food-storage lid (cracked, being thrown out)',
@@ -293,7 +280,6 @@ const pp: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Another classic PP tub in the "check locally" category.',
     factCitation: 'PP tub acceptance correlates with whether a MRF has invested in near-infrared sorting for #5.',
-    citationVerified: false,
   }),
 ];
 
@@ -320,7 +306,6 @@ const ps: WasteItem[] = [
     municipalityVariance: 'rarely-accepted',
     explanation: 'Foam packing peanuts are not curbside recyclable; some shipping stores accept them for reuse (not the same as municipal recycling).',
     factCitation: 'Peanut/void-fill foam recycling exists mainly through voluntary retail take-back, not municipal programs.',
-    citationVerified: false,
   }),
   w('plastic', {
     name: '#6 rigid polystyrene disposable cutlery',
@@ -335,7 +320,6 @@ const ps: WasteItem[] = [
     municipalityVariance: 'rarely-accepted',
     explanation: 'Rigid PS jewel cases are not curbside recyclable in most places, despite looking "hard plastic."',
     factCitation: 'Hardness/rigidity of a plastic item says nothing about its resin-based recyclability.',
-    citationVerified: false,
   }),
   w('plastic', {
     name: '#6 foam takeout clamshell',
@@ -344,7 +328,6 @@ const ps: WasteItem[] = [
     contamination: [{ intoStream: 'recycle', severity: 'minor', reason: 'Foam crumbles and food residue frequently accompanies it.' }],
     explanation: 'Foam takeout containers combine the foam problem with near-certain food contamination.',
     factCitation: 'Foam foodservice ware is one of the most frequently "wishcycled" items despite low real acceptance.',
-    citationVerified: false,
   }),
 ];
 
@@ -394,7 +377,6 @@ const other7: WasteItem[] = [
     municipalityVariance: 'rarely-accepted',
     explanation: 'Metallized multi-layer film looks foil-like but is mostly plastic laminate — not recyclable through standard curbside streams.',
     factCitation: 'Snack-bag laminates combine plastic and thin metallization, a common "wishcycled" item.',
-    citationVerified: false,
   }),
 ];
 

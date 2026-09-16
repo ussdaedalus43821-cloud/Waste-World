@@ -54,11 +54,11 @@ export function renderFinalReport(stats: ReportStats, onContinue: () => void): H
     el('div', { className: 'fragmentation-note' }, [
       el('h3', {}, ['One more thing']),
       el('p', {}, [
-        'This entire simulation runs on rules for one hypothetical municipality. In reality, the United States has no single national recycling standard — policy is set locally, roughly by county or city, across tens of thousands of separate programs. ',
+        'This entire simulation runs on rules for one hypothetical municipality. In reality, the United States has no single national recycling standard — policy is set locally, and the Recycling Partnership’s National Recycling Database tracks upwards of 9,000 distinct community programs, each setting its own accepted-materials list. ',
         'The exact same item can be correctly recyclable in one town and a contaminant two towns over. Other countries with more centralized waste policy (Japan and Germany are often cited) can teach one consistent set of rules nationwide; the US structurally cannot, which is part of why this never made it into a standard K-12 curriculum here.',
       ]),
       el('p', { className: 'muted small' }, [
-        'Illustrative framing, not an audited cross-country comparison — verify specifics before citing them elsewhere.',
+        'Program count is sourced; the cross-country curriculum comparison is illustrative framing, not an audited claim — verify specifics before citing elsewhere.',
       ]),
     ]),
 

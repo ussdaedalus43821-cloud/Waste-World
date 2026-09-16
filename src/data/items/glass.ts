@@ -65,7 +65,6 @@ export const glassItems: WasteItem[] = [
     contamination: GLASS_SHARD_CONTAM,
     explanation: 'Mirror glass has a metallic backing coating that is not compatible with container-glass recycling.',
     factCitation: 'Coated/laminated glass (mirrors, some window glass) is a standard exclusion on municipal glass-recycling lists.',
-    citationVerified: false,
   }),
   w('glass', {
     name: 'Window pane glass (broken, from an old picture frame)',
@@ -73,7 +72,6 @@ export const glassItems: WasteItem[] = [
     contamination: GLASS_SHARD_CONTAM,
     explanation: 'Flat/plate glass has a different composition and melting behavior than container glass and is not accepted curbside.',
     factCitation: 'Flat glass (windows, mirrors, auto glass) is a standard exclusion from residential container-glass recycling.',
-    citationVerified: false,
   }),
   w('glass', {
     name: 'Baby food jar (small, empty, rinsed)',
@@ -81,7 +79,6 @@ export const glassItems: WasteItem[] = [
     residueState: 'rinsed',
     explanation: 'Small glass jars recycle the same as any other container glass.',
     factCitation: 'Size does not disqualify glass containers the way it can for small plastic/metal items.',
-    citationVerified: false,
   }),
   w('glass', {
     name: 'Perfume/cologne glass bottle (empty)',

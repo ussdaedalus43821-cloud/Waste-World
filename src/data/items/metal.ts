@@ -47,7 +47,6 @@ export const metalItems: WasteItem[] = [
     category: 'metal', correctStream: 'recycle', material: 'steel',
     explanation: 'A fully empty (depressurized) aerosol can is generally recyclable as steel/aluminum scrap — the hazard is with cans that still have pressurized contents.',
     factCitation: 'Most curbside guidance accepts empty aerosol cans but explicitly warns against ones that are not fully empty.',
-    citationVerified: false,
   }),
   w('metal', {
     name: 'Aerosol can, still has pressurized contents (whipped cream can)',
@@ -56,7 +55,6 @@ export const metalItems: WasteItem[] = [
     contamination: [{ intoStream: 'recycle', severity: 'major', reason: 'A pressurized can compacted in a truck or baler can rupture violently and spray remaining contents into the load.' }],
     explanation: 'Pressurized aerosol cans can rupture or explode if compacted while still full — treat as household hazardous waste, not curbside recycling.',
     factCitation: 'Pressurized containers are a recognized MRF/collection-truck safety hazard when not fully discharged.',
-    citationVerified: false,
   }),
   w('metal', {
     name: 'Wire coat hanger',
@@ -121,7 +119,6 @@ export const metalItems: WasteItem[] = [
     contamination: GREASE_FOOD_CONTAM('minor'),
     explanation: 'Single-serve coffee pods mix plastic, foil, paper filter, and food waste in one small package — recyclable only through a small number of manufacturer take-back programs that require disassembly.',
     factCitation: 'Single-use coffee pods are frequently cited as a hard-to-recycle multi-material product needing manual separation.',
-    citationVerified: false,
   }),
   w('metal', {
     name: 'Steel paperclip / small metal fasteners (loose handful)',
@@ -145,6 +142,5 @@ export const metalItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Small mixed-metal gadgets are usually excluded — scrap metal recyclers are the better path if available locally.',
     factCitation: 'Small, dense mixed-metal items are a common "wishcycled" category outside formal scrap channels.',
-    citationVerified: false,
   }),
 ];

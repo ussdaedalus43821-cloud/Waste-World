@@ -8,7 +8,6 @@ export const textileItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Clothing does not belong in curbside recycling or compost — donate if wearable, or use a textile take-back bin (many retailers and thrift stores run one) if not.',
     factCitation: 'Textile recycling almost always requires a dedicated drop-off/take-back channel, not curbside collection.',
-    citationVerified: false,
   }),
   w('tex', {
     name: 'Worn-out sneakers',
@@ -16,7 +15,6 @@ export const textileItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Some athletic shoe brands run their own shoe take-back/recycling programs; without one nearby, they are trash, not curbside recyclable.',
     factCitation: 'A handful of shoe manufacturers/retailers operate voluntary shoe take-back recycling programs.',
-    citationVerified: false,
   }),
   w('tex', {
     name: 'Ripped jeans',
@@ -24,7 +22,6 @@ export const textileItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Same as other clothing — textile drop-off if available, otherwise trash.',
     factCitation: 'Denim recycling programs exist in some regions but are not standard curbside offerings.',
-    citationVerified: false,
   }),
   w('tex', {
     name: 'Old bedsheets (torn)',
@@ -32,14 +29,12 @@ export const textileItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Large textiles follow the same rule as clothing — not curbside recyclable.',
     factCitation: 'Household linens fall under the same textile-recycling gap as clothing.',
-    citationVerified: false,
   }),
   w('tex', {
     name: 'Stuffed animal / plush toy (worn out)',
     category: 'textile', correctStream: 'trash', material: 'textiles',
     explanation: 'Mixed stuffing and fabric materials make plush toys essentially unrecyclable outside specialty programs.',
     factCitation: 'Composite stuffed textiles are rarely accepted by even dedicated textile recyclers.',
-    citationVerified: false,
   }),
   w('tex', {
     name: 'Old backpack (broken zipper, worn straps)',
@@ -61,14 +56,12 @@ export const textileItems: WasteItem[] = [
     category: 'textile', correctStream: 'trash', material: 'textiles',
     explanation: 'Synthetic fleece sheds microplastic fibers and, like other clothing, needs specialty textile recycling rather than curbside handling.',
     factCitation: 'Synthetic textiles are a recognized source of microplastic fiber shedding during washing and disposal.',
-    citationVerified: false,
   }),
   w('tex', {
     name: 'Heavy curtains (worn, faded)',
     category: 'textile', correctStream: 'trash', material: 'textiles',
     explanation: 'Large fabric items are not curbside recyclable.',
     factCitation: 'Household textiles broadly require dedicated drop-off collection.',
-    citationVerified: false,
   }),
   w('tex', {
     name: 'Carpet remnant (small piece, old)',
@@ -76,14 +69,12 @@ export const textileItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Carpet is a composite of fiber and backing material — a handful of specialty carpet recyclers exist, but curbside pickup is not one of them.',
     factCitation: 'Carpet recycling requires specialized facilities to separate face fiber from backing.',
-    citationVerified: false,
   }),
   w('tex', {
     name: 'Single sock (partner lost)',
     category: 'textile', correctStream: 'trash', material: 'textiles',
     explanation: 'Same textile rule applies regardless of how small the item is.',
     factCitation: 'Textile recyclability does not depend on item size.',
-    citationVerified: false,
   }),
   w('tex', {
     name: 'Winter gloves (worn out, one missing)',
@@ -104,7 +95,6 @@ export const textileItems: WasteItem[] = [
     category: 'textile', correctStream: 'trash', material: 'textiles',
     explanation: 'Household linens follow the same textile rule as clothing.',
     factCitation: 'Textile-recycling gap applies broadly to household fabric goods.',
-    citationVerified: false,
   }),
   w('tex', {
     name: 'Old pillow (flattened, stained)',
@@ -119,6 +109,5 @@ export const textileItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Mattresses need bulk-item pickup or a dedicated mattress recycler (some cities run these); they cannot go in a normal bin at all.',
     factCitation: 'Mattress recycling programs are a growing but still regionally limited service in the US.',
-    citationVerified: false,
   }),
 ];

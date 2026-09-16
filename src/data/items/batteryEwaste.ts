@@ -92,7 +92,6 @@ export const batteryEwasteItems: WasteItem[] = [
     fireRisk: { probability: 0.3, condition: 'crushed-in-sorter' },
     explanation: 'Same as phones, at larger scale — electronics recycling drop-off.',
     factCitation: 'E-waste recycling recovers metals and safely handles the embedded battery.',
-    citationVerified: false,
   }),
   w('batt', {
     name: 'USB charging cable (old, frayed)',
@@ -100,7 +99,6 @@ export const batteryEwasteItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'No battery, but the mixed copper/plastic makes it low-value scrap — some e-waste programs accept cables for metal recovery.',
     factCitation: 'Cable recycling for copper recovery exists through some, not all, e-waste programs.',
-    citationVerified: false,
   }),
   w('batt', {
     name: 'String of holiday lights (broken, tangled)',
@@ -113,17 +111,16 @@ export const batteryEwasteItems: WasteItem[] = [
   }),
   w('batt', {
     name: 'Smoke detector (old, being replaced)',
-    category: 'e-waste', correctStream: 'hazardous', material: 'e-waste-metals',
-    explanation: 'Some smoke detectors contain a tiny amount of radioactive americium-241 — manufacturers/some hazardous-waste programs offer specific take-back rather than ordinary trash.',
-    factCitation: 'Ionization smoke detectors contain a small sealed source of americium-241, which is why some jurisdictions recommend mail-back rather than trash disposal.',
-    citationVerified: false,
+    category: 'e-waste', correctStream: 'trash', material: 'e-waste-metals',
+    municipalityVariance: 'varies-by-city',
+    explanation: 'Ionization smoke detectors contain a tiny sealed source of americium-241, but the EPA says normal household trash is fine — the sealed foil poses no exposure risk. The exception: if your area incinerates trash, keep it out, since it will trigger the incinerator’s radiation alarms and get the whole load rejected. Manufacturer mail-back programs exist as an option either way.',
+    factCitation: 'EPA guidance states ionization smoke detectors may be thrown away with household garbage under normal circumstances, with the specific exception of trash destined for incineration.',
   }),
   w('batt', {
     name: 'CFL bulb (see also glass category — duplicate context: office bulk pack, unopened box of dead bulbs)',
     category: 'e-waste', correctStream: 'hazardous', material: 'e-waste-metals',
     explanation: 'Bulk CFL bulbs carry the same mercury-vapor concern as a single bulb, just scaled up — hazardous/take-back disposal.',
     factCitation: 'Mercury content applies per-bulb regardless of how many are discarded together.',
-    citationVerified: false,
   }),
   w('batt', {
     name: 'LED bulb (burned out)',
@@ -131,7 +128,6 @@ export const batteryEwasteItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'LEDs contain no mercury, so most areas allow trash disposal, though some e-waste programs will still take them for the small circuit board inside.',
     factCitation: 'LED bulbs lack the mercury vapor that makes CFL disposal a special case.',
-    citationVerified: false,
   }),
   w('batt', {
     name: 'Power strip / surge protector (broken)',
@@ -139,7 +135,6 @@ export const batteryEwasteItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'No battery, but mixed plastic/metal/circuitry makes it an e-waste item in areas with e-waste programs, trash elsewhere.',
     factCitation: 'Small electronics acceptance varies significantly by local e-waste program availability.',
-    citationVerified: false,
   }),
   w('batt', {
     name: 'Wireless computer mouse (old, with battery removed)',
@@ -147,14 +142,12 @@ export const batteryEwasteItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Small e-waste; battery already removed reduces (but the device itself is still ideally e-waste-recycled where available) the fire risk for this specific item.',
     factCitation: 'Peripheral electronics acceptance depends on local e-waste program scope.',
-    citationVerified: false,
   }),
   w('batt', {
     name: 'Inkjet printer (old, broken) with ink cartridges still inside',
     category: 'e-waste', correctStream: 'hazardous', material: 'e-waste-metals',
     explanation: 'Printers combine circuit boards, plastics, and chemical ink residue — electronics take-back, not curbside trash or recycling.',
     factCitation: 'Printers are commonly listed under e-waste programs due to circuitry and ink/toner residue.',
-    citationVerified: false,
   }),
   w('batt', {
     name: 'Empty inkjet ink cartridge',
@@ -170,7 +163,6 @@ export const batteryEwasteItems: WasteItem[] = [
     fireRisk: { probability: 0.1, condition: 'crushed-in-sorter' },
     explanation: 'A sealed built-in battery makes this a fire-risk e-waste item, not ordinary bathroom trash.',
     factCitation: 'Small personal-care electronics with sealed rechargeable batteries carry the same mis-sorting fire risk as other lithium devices.',
-    citationVerified: false,
   }),
   w('batt', {
     name: 'Cordless power tool battery pack (large lithium-ion)',
@@ -186,7 +178,6 @@ export const batteryEwasteItems: WasteItem[] = [
     fireRisk: { probability: 0.15, condition: 'compacted-in-truck' },
     explanation: 'Tiny but real lithium cells inside — treat as battery e-waste, not general trash.',
     factCitation: 'Miniaturized lithium cells are increasingly common in small consumer electronics.',
-    citationVerified: false,
   }),
   w('batt', {
     name: 'Smartwatch/fitness tracker (old, broken)',
@@ -194,14 +185,12 @@ export const batteryEwasteItems: WasteItem[] = [
     fireRisk: { probability: 0.15, condition: 'compacted-in-truck' },
     explanation: 'Same embedded-battery e-waste logic as a phone, just smaller.',
     factCitation: 'Wearables contain small lithium-ion cells similar in principle to phone batteries.',
-    citationVerified: false,
   }),
   w('batt', {
     name: 'External hard drive (old, broken)',
     category: 'e-waste', correctStream: 'hazardous', material: 'e-waste-metals',
     explanation: 'Contains recoverable metals and sometimes personal data — e-waste recycling (with data wiping/destruction) is the correct path.',
     factCitation: 'Data-bearing devices are commonly handled through e-waste programs that include data destruction services.',
-    citationVerified: false,
   }),
   w('batt', {
     name: 'USB flash drive (old, broken)',

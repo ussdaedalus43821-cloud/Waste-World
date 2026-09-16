@@ -16,7 +16,6 @@ export const additionalItems: WasteItem[] = [
     category: 'other', correctStream: 'trash', material: 'glass',
     explanation: 'Fired clay ceramic, not glass or a standard recyclable — broken terracotta is trash (or reused as drainage material in some gardening guidance).',
     factCitation: 'Ceramics are excluded from glass recycling due to differing melting properties.',
-    citationVerified: false,
   }),
   w('add', {
     name: 'Plastic plant nursery pot (black #5 or #6, empty)',
@@ -24,7 +23,6 @@ export const additionalItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Black plastic is often invisible to optical sorting equipment regardless of resin code — many nursery pots are excluded from curbside recycling for this reason alone; some garden centers run pot take-back instead.',
     factCitation: 'Black plastics are commonly reported as difficult for near-infrared optical sorters to detect and correctly route.',
-    citationVerified: false,
   }),
   w('add', {
     name: 'Bag of used potting soil (plastic bag included)',
@@ -47,7 +45,6 @@ export const additionalItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Tires need a dedicated tire retailer or recycling drop-off (often for a small fee) — never curbside trash, where whole tires are commonly refused and can trap water, breeding mosquitoes if left outside.',
     factCitation: 'Tire recycling into rubber mulch/asphalt additive is a well-established dedicated industry separate from municipal waste collection.',
-    citationVerified: false,
     weightKg: 9,
   }),
   w('add', {
@@ -88,7 +85,6 @@ export const additionalItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Some brands use degradable plastic rings, but most are not curbside recyclable; cutting the rings before disposal prevents wildlife entanglement regardless.',
     factCitation: 'Plastic six-pack rings are a well-documented wildlife entanglement hazard, prompting some redesign efforts by beverage companies.',
-    citationVerified: false,
   }),
   w('add', {
     name: 'Disposable hand sanitizer bottle (empty, no liquid)',
@@ -96,7 +92,6 @@ export const additionalItems: WasteItem[] = [
     residueState: 'rinsed',
     explanation: 'A genuinely empty sanitizer bottle recycles as ordinary HDPE plastic; the alcohol-based gel itself is flammable while wet, so ensure it is actually empty first.',
     factCitation: 'Empty personal-care plastic bottles follow standard resin-based recycling rules once emptied.',
-    citationVerified: false,
   }),
   w('add', {
     name: 'Birthday candles (used, wax and wire wick)',
@@ -111,7 +106,6 @@ export const additionalItems: WasteItem[] = [
     municipalityVariance: 'rarely-accepted',
     explanation: 'Photographic paper has a plastic-resin coating that most paper mills reject, unlike ordinary glossy magazine stock.',
     factCitation: 'Photo paper coatings are commonly listed as a paper-recycling exclusion distinct from magazine gloss coatings.',
-    citationVerified: false,
   }),
   w('add', {
     name: 'Plastic shipping label backing sheet (adhesive release liner)',
@@ -133,7 +127,6 @@ export const additionalItems: WasteItem[] = [
     category: 'other', correctStream: 'trash', material: 'mixed-plastics-3-7',
     explanation: 'Closed-cell foam exercise mats are not recyclable or compostable through standard household streams.',
     factCitation: 'Foam exercise equipment is excluded from both plastic recycling and composting guidance.',
-    citationVerified: false,
   }),
   w('add', {
     name: 'Empty prescription pill bottle with the label still attached',

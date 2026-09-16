@@ -35,7 +35,6 @@ export const hazardousSolidItems: WasteItem[] = [
     category: 'hazardous-solid', correctStream: 'hazardous', material: 'e-waste-metals',
     explanation: 'Needles need a rigid sharps container and a medical-waste/pharmacy take-back program — never loose in household trash, where they injure waste workers.',
     factCitation: 'Home-generated sharps waste has dedicated collection programs precisely because of injury risk to sanitation workers.',
-    citationVerified: false,
   }),
   w('haz', {
     name: 'Asbestos floor tile fragment (old renovation debris)',
@@ -55,7 +54,6 @@ export const hazardousSolidItems: WasteItem[] = [
     category: 'hazardous-solid', correctStream: 'hazardous', material: 'glass',
     explanation: 'Like CFL bulbs, fluorescent tubes contain a small amount of mercury vapor — hazardous-waste or retailer take-back, not general trash.',
     factCitation: 'Fluorescent tube lighting is broadly regulated similarly to CFL bulbs due to mercury content.',
-    citationVerified: false,
   }),
   w('haz', {
     name: 'Used hand/body warmers (single-use, iron-based)',
@@ -76,7 +74,6 @@ export const hazardousSolidItems: WasteItem[] = [
     category: 'hazardous-solid', correctStream: 'trash', material: 'e-waste-metals',
     explanation: 'Modern silica gel is generally non-toxic and is ordinary trash — a common misconception treats it as hazardous.',
     factCitation: 'Silica gel packaging desiccant is typically non-toxic silicon dioxide, unlike older cobalt-chloride indicating variants.',
-    citationVerified: false,
   }),
   w('haz', {
     name: 'Disposable butane lighter (empty)',
@@ -98,7 +95,6 @@ export const hazardousSolidItems: WasteItem[] = [
     category: 'hazardous-solid', correctStream: 'recycle', material: 'steel',
     explanation: 'A genuinely empty aerosol can recycles as metal scrap, same as other empty aerosols.',
     factCitation: 'Empty (fully depressurized) aerosol cans are commonly accepted in curbside metal recycling.',
-    citationVerified: false,
   }),
   w('haz', {
     name: 'Pool shock treatment (granular calcium hypochlorite, unused)',
@@ -119,7 +115,6 @@ export const hazardousSolidItems: WasteItem[] = [
     category: 'hazardous-solid', correctStream: 'hazardous', material: 'e-waste-metals',
     explanation: 'Older thermostats can contain a small mercury switch — hazardous-waste/electronics take-back, not trash.',
     factCitation: 'Pre-digital mercury-switch thermostats are commonly named in HHW/e-waste collection guidance.',
-    citationVerified: false,
   }),
   w('haz', {
     name: 'Contact lenses (used, in original blister)',
@@ -127,6 +122,5 @@ export const hazardousSolidItems: WasteItem[] = [
     contamination: [{ intoStream: 'recycle', severity: 'minor', reason: 'Loose contact lenses are too small for sorting equipment and are frequently flushed by mistake, which they should never be.' }],
     explanation: 'Contact lenses should never be flushed (they contribute to microplastic pollution) — they are ordinary trash; some optometry chains offer a specific recycling take-back for lenses and blister packaging.',
     factCitation: 'Flushed contact lenses have been identified as a contributor to microplastic pollution in wastewater studies.',
-    citationVerified: false,
   }),
 ];

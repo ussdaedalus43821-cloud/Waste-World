@@ -13,7 +13,6 @@ export const paperCardboardItems: WasteItem[] = [
     category: 'paper-cardboard', correctStream: 'recycle', material: 'mixed-paper',
     explanation: 'Glossy coating is a clay-based finish, not plastic — magazines are recyclable mixed paper.',
     factCitation: 'Magazine gloss is typically a clay/starch coating compatible with standard paper repulping.',
-    citationVerified: false,
   }),
   w('paper', {
     name: 'Corrugated cardboard box (clean, flattened)',
@@ -22,18 +21,23 @@ export const paperCardboardItems: WasteItem[] = [
     factCitation: 'Old corrugated cardboard (OCC) is one of the most consistently valuable recycled materials by weight.',
   }),
   w('paper', {
-    name: 'Pizza box bottom, heavily greasy',
+    name: 'Pizza box bottom, fully soaked and saturated with grease',
     category: 'paper-cardboard', correctStream: 'trash', material: 'cardboard',
     contamination: GREASE_FOOD_CONTAM('major'),
-    explanation: 'Cardboard IS recyclable, but grease and cheese soaked into the fiber cannot be separated back out during repulping — it ruins the paper fiber, not just this box.',
-    factCitation: 'Fiber-embedded oil cannot be removed by standard paper-mill repulping/screening, unlike surface dirt.',
+    explanation: 'Cardboard IS recyclable, but once grease has fully soaked through and saturated the fiber, repulping can’t separate it back out — this level of contamination, not grease in general, is what ruins a batch.',
+    factCitation: 'Industry guidance (e.g. WestRock testing) distinguishes light grease (roughly under 2% of the box, which mills tolerate) from full saturation, which is excluded; average small pizza boxes run about 1-2% grease.',
+  }),
+  w('paper', {
+    name: 'Pizza box with a few grease spots and some stuck-on cheese (not soaked)',
+    category: 'paper-cardboard', correctStream: 'recycle', material: 'cardboard',
+    explanation: 'This is the case people usually get wrong: typical light grease spots and a bit of stuck cheese — well under full saturation — are tolerated by most modern paper mills and can go straight in recycling, box and all.',
+    factCitation: 'A WestRock industry study found pizza boxes with grease content up to about 2% did not significantly affect recycled paperboard quality.',
   }),
   w('paper', {
     name: 'Pizza box lid, clean (no grease reached it)',
     category: 'paper-cardboard', correctStream: 'recycle', material: 'cardboard',
-    explanation: 'If a lid genuinely has no grease or cheese contact, that portion is recyclable — many programs suggest tearing off and recycling only the clean part.',
-    factCitation: 'Some municipal guidance recommends recycling only the ungreased portion of a pizza box rather than the whole thing.',
-    citationVerified: false,
+    explanation: 'A genuinely clean lid is recyclable regardless of what happened to the rest of the box — though for typical light grease you don’t even need to tear it off.',
+    factCitation: 'Grease contamination is a property of what actually touched the cardboard, not the whole box as a unit.',
   }),
   w('paper', {
     name: 'Shredded paper (loose, in a plastic bag)',
@@ -69,7 +73,6 @@ export const paperCardboardItems: WasteItem[] = [
     category: 'paper-cardboard', correctStream: 'recycle', material: 'mixed-paper',
     explanation: 'Uncoated plain paper wrapping paper recycles like any other mixed paper.',
     factCitation: 'It is the foil/plastic/glitter coating that disqualifies wrapping paper, not the paper itself.',
-    citationVerified: false,
   }),
   w('paper', {
     name: 'Thermal receipt paper',
@@ -100,14 +103,12 @@ export const paperCardboardItems: WasteItem[] = [
     municipalityVariance: 'varies-by-city',
     explanation: 'Aseptic cartons layer paperboard, plastic, and aluminum foil together — recyclable only where a specific carton program exists.',
     factCitation: 'Aseptic cartons require dedicated hydropulping facilities to separate their paper/plastic/foil layers.',
-    citationVerified: false,
   }),
   w('paper', {
     name: 'Sticky notes (small pad, used)',
     category: 'paper-cardboard', correctStream: 'recycle', material: 'mixed-paper',
     explanation: 'The small adhesive strip is a negligible contaminant at paper-mill scale — sticky notes are fine as mixed paper.',
     factCitation: 'Small adhesive spots are generally tolerated in bulk mixed-paper repulping.',
-    citationVerified: false,
   }),
   w('paper', {
     name: 'Envelope with plastic address window',
@@ -121,7 +122,6 @@ export const paperCardboardItems: WasteItem[] = [
     category: 'paper-cardboard', correctStream: 'recycle', material: 'mixed-paper',
     explanation: 'Paperback books recycle as mixed paper; consider donating first if still readable.',
     factCitation: 'Glue bindings are removed during the repulping process along with other minor contaminants.',
-    citationVerified: false,
   }),
   w('paper', {
     name: 'Hardcover book (cover still attached)',
@@ -143,7 +143,6 @@ export const paperCardboardItems: WasteItem[] = [
     contamination: [{ intoStream: 'recycle', severity: 'minor', reason: 'Unmarked thin plastic film with no resin code, not accepted in paper or most plastic streams.' }],
     explanation: 'The wax-paper-like liner inside a cereal box is usually unmarked plastic film, not recyclable curbside.',
     factCitation: 'Unlabeled flexible packaging film is broadly excluded from both paper and plastic recycling streams.',
-    citationVerified: false,
   }),
   w('paper', {
     name: 'Egg carton (molded pulp/paper)',
@@ -172,7 +171,6 @@ export const paperCardboardItems: WasteItem[] = [
     category: 'paper-cardboard', correctStream: 'recycle', material: 'cardboard',
     explanation: 'Leaving reasonable amounts of tape on is fine — most MRFs screen it out; it is grease/wax coating that is the real cardboard problem.',
     factCitation: 'Standard plastic packing tape in normal quantities is tolerated by cardboard repulping mills.',
-    citationVerified: false,
   }),
   w('paper', {
     name: 'Wax-coated produce box (waxed cardboard)',

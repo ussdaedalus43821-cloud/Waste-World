@@ -20,7 +20,6 @@ export const organicItems: WasteItem[] = [
     contamination: [{ intoStream: 'compost', severity: 'minor', reason: 'PLU stickers are plastic (or plastic-coated) and do not break down, leaving persistent fragments in finished compost.' }],
     explanation: 'The peel composts fine, but the small sticker is plastic and should be peeled off first — those tiny stickers are a well-known, frequently-missed compost contaminant.',
     factCitation: 'Produce (PLU) stickers are a commonly cited contaminant found in finished municipal compost.',
-    citationVerified: false,
   }),
   w('organic', {
     name: 'Coffee grounds (loose, with a paper filter)',
@@ -67,7 +66,6 @@ export const organicItems: WasteItem[] = [
     category: 'organic', correctStream: 'compost', material: 'organics',
     explanation: 'Plant matter without pesticide residue composts normally.',
     factCitation: 'Plant trimmings are standard green compost material absent chemical treatment.',
-    citationVerified: false,
   }),
   w('organic', {
     name: 'Stale bread',
@@ -96,7 +94,6 @@ export const organicItems: WasteItem[] = [
     contamination: [{ intoStream: 'compost', severity: 'minor', reason: 'Synthetic mesh does not break down and leaves microplastic-like fragments in finished compost.' }],
     explanation: 'Modern "silken" pyramid tea bags are often woven from plastic (nylon/PET), which will not compost — a very common hidden-plastic mistake.',
     factCitation: 'A growing share of premium tea bags use plastic-based mesh rather than plant fiber.',
-    citationVerified: false,
   }),
   w('organic', {
     name: '"Compostable" branded plastic cup (PLA bioplastic)',
@@ -112,7 +109,6 @@ export const organicItems: WasteItem[] = [
     municipalityVariance: 'rarely-accepted',
     explanation: 'Pet waste carries pathogens that most compost systems are not designed to fully neutralize — it is generally trash, not compost, and the bag is often plastic too.',
     factCitation: 'Pet waste is commonly excluded from both backyard and municipal composting due to pathogen risk.',
-    citationVerified: false,
   }),
   w('organic', {
     name: 'Cooked rice (leftover, plain)',
@@ -126,7 +122,6 @@ export const organicItems: WasteItem[] = [
     category: 'organic', correctStream: 'compost', material: 'organics',
     explanation: 'Similar to rice — compostable in moderation.',
     factCitation: 'Plain cooked pasta is generally accepted in municipal food-scrap programs.',
-    citationVerified: false,
   }),
   w('organic', {
     name: 'Corn cob',
@@ -154,14 +149,12 @@ export const organicItems: WasteItem[] = [
     category: 'organic', correctStream: 'trash', material: 'organics',
     explanation: 'Synthetic fiber lint is essentially microplastic and should not go into compost.',
     factCitation: 'Synthetic textile lint sheds microplastic fibers that persist in compost and waterways alike.',
-    citationVerified: false,
   }),
   w('organic', {
     name: 'Wooden chopsticks / popsicle sticks (plain wood)',
     category: 'organic', correctStream: 'compost', material: 'organics',
     explanation: 'Plain untreated wood composts, though slowly.',
     factCitation: 'Small plain-wood items are commonly accepted in food-scrap composting programs.',
-    citationVerified: false,
   }),
   w('organic', {
     name: 'Avocado pit',

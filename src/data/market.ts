@@ -23,10 +23,10 @@ export const SHOCK_DURATION_WEEKS = 6;
 export const SHOCK_NAME = 'Global Recycling Market Shock';
 export const SHOCK_HEADLINE = 'Overseas buyer abruptly stops taking mixed plastics and low-grade paper';
 export const SHOCK_BODY =
-  'Modeled loosely on the real 2018 shift in Chinese import policy ("National Sword"), which for decades had been the largest buyer of the world’s recyclable scrap. ' +
-  'When that market closed to contaminated/mixed loads, many collectors abruptly had nowhere to sell material that had been "successfully recycled" for years — ' +
-  'stockpiles built up, prices crashed, and a significant share of collected plastic and paper was quietly redirected to landfill or incineration, even though households kept sorting it correctly. ' +
-  'Exact figures here are illustrative for gameplay pacing, not audited industry statistics — verify against real trade data before treating as fact.';
+  'Modeled on the real 2018 Chinese "National Sword" policy: an outright ban on imports of 24 recyclable material categories plus a strict 0.5% contamination limit on everything else, ' +
+  'aimed at a country that had for decades bought roughly half the world’s traded recyclable scrap. US container exports to China, previously around 4,000 per day, dropped an estimated 90-95%. ' +
+  'Many collectors abruptly had nowhere to sell material that had been "successfully recycled" for years — stockpiles built up, prices crashed, and a significant share of collected plastic and paper was quietly redirected to landfill or incineration, even though households kept sorting it correctly. ' +
+  'The National Sword facts above are sourced; the specific demand-multiplier numbers this game uses to model the shock are stylized for gameplay pacing, not real commodity-index figures.';
 
 /** Returns this week's demand multipliers, applying the scripted shock window if active. */
 export function getMarketStateForWeek(week: number): MarketState {

@@ -44,8 +44,7 @@ export const liquidItems: LiquidItem[] = [
     isValueRecoverable: true, recoveredAs: 'biodiesel feedstock',
     drainHazard: { severity: 'major', mechanism: 'Cooking oil solidifies (congeals with grease, "FOG") inside sewer pipes and is a leading cause of residential sewer-line and municipal main blockages.' },
     explanation: 'Used cooking oil poured down the drain is a top cause of home and municipal sewer blockages — collected properly instead, it becomes feedstock for biodiesel.',
-    factCitation: 'Fats, oils, and grease (FOG) poured down drains are widely cited by water utilities as a leading cause of sewer blockages and overflows; used cooking oil collection for biodiesel conversion is an established industry, though exact yield/viability figures vary by feedstock quality.',
-    citationVerified: false,
+    factCitation: 'FOG deposits cause roughly 30-40% of US sewer clogs and are linked to nearly half of sanitary sewer overflows; conversion into biodiesel is the largest single use of waste cooking oil, run by both commercial collectors and city programs.',
   }),
   l({
     name: 'Used motor oil (drained during an oil change)',
@@ -53,8 +52,7 @@ export const liquidItems: LiquidItem[] = [
     isValueRecoverable: true, recoveredAs: 're-refined base oil / lubricant',
     drainHazard: { severity: 'batch-voiding', mechanism: 'A single quart of motor oil can contaminate a very large volume of groundwater; illegal dumping is a serious environmental hazard.' },
     explanation: 'Used motor oil is toxic if drained or dumped, but auto parts stores and service stations widely accept it for re-refining into new lubricant — one of the clearest "do it right and it has real value" stories in household waste.',
-    factCitation: 'Used motor oil re-refining into base lubricant oil is a long-established industrial process; many US auto parts retailers accept used oil for free by law or policy in many states.',
-    citationVerified: false,
+    factCitation: 'One gallon of used motor oil can pollute up to a million gallons of freshwater if dumped (EPA); re-refining that same gallon yields about 2.5 quarts of fresh lubricant, and major chains (AutoZone, O’Reilly, NAPA, Pep Boys) accept up to 5 gallons free as certified collection centers.',
     volumeL: 4,
   }),
   l({
@@ -63,7 +61,6 @@ export const liquidItems: LiquidItem[] = [
     drainHazard: { severity: 'batch-voiding', mechanism: 'Ethylene glycol antifreeze is toxic to pets and wildlife (it has a sweet taste that attracts animals) and is banned from storm drains and sewers in most jurisdictions.' },
     explanation: 'Antifreeze is acutely toxic to pets and wildlife — household hazardous waste collection only, never a drain or storm sewer.',
     factCitation: 'Ethylene glycol antifreeze toxicity to animals (due to its sweet taste) is well documented in veterinary and environmental guidance.',
-    citationVerified: false,
     volumeL: 4,
   }),
   l({
@@ -72,7 +69,6 @@ export const liquidItems: LiquidItem[] = [
     drainHazard: { severity: 'minor', mechanism: 'Wet latex paint should never be drained, but once fully solid/dried it is inert.' },
     explanation: 'Many municipalities accept fully hardened, dried-out latex paint as ordinary trash (lid off, so an inspector can confirm it is solid) — never pour wet latex paint down a drain.',
     factCitation: 'A number of US municipal guides explicitly allow dried latex paint in the trash, distinct from paint that is still liquid.',
-    citationVerified: false,
     volumeL: 1,
   }),
   l({
@@ -81,7 +77,6 @@ export const liquidItems: LiquidItem[] = [
     drainHazard: { severity: 'major', mechanism: 'Oil-based paint is flammable and toxic; it does not dry/solidify safely the way latex paint does.' },
     explanation: 'Oil-based paints are flammable and hazardous while wet — household hazardous waste collection, never trash or drain.',
     factCitation: 'Oil-based (alkyd) paints are commonly listed as household hazardous waste distinct from water-based latex paint.',
-    citationVerified: false,
     volumeL: 2,
   }),
   l({
@@ -98,7 +93,6 @@ export const liquidItems: LiquidItem[] = [
     drainHazard: { severity: 'major', mechanism: 'Flushed or drained pharmaceuticals pass through many wastewater treatment systems largely intact and have been detected in downstream waterways.' },
     explanation: 'Unused medication should go to a pharmacy or police-station take-back program, not down the drain — flushed drugs contribute to detectable pharmaceutical pollution in waterways.',
     factCitation: 'Pharmaceutical take-back programs (e.g., DEA National Prescription Drug Take Back Day and year-round pharmacy kiosks) exist specifically because flushed/drained medication is a recognized water-contamination pathway.',
-    citationVerified: false,
     volumeL: 0.1,
   }),
   l({
@@ -150,7 +144,6 @@ export const liquidItems: LiquidItem[] = [
     drainHazard: { severity: 'major', mechanism: 'Brake fluid is toxic and corrosive to many materials; not accepted in drains or general trash.' },
     explanation: 'Brake fluid is toxic and corrosive — household hazardous waste or an auto-parts take-back program, similar to motor oil.',
     factCitation: 'Brake fluid is commonly listed as HHW; some auto parts retailers accept it alongside used motor oil.',
-    citationVerified: false,
     volumeL: 0.5,
   }),
   l({
@@ -176,7 +169,6 @@ export const liquidItems: LiquidItem[] = [
     drainHazard: { severity: 'minor', mechanism: 'Lower-risk than prescription drugs, but still discouraged from flushing/draining as a wastewater contaminant class.' },
     explanation: 'Unlike prescription medication, most over-the-counter liquid vitamins can go in sealed trash — still avoid flushing/draining them, but they do not require a controlled take-back program.',
     factCitation: 'Disposal guidance commonly distinguishes controlled/prescription pharmaceuticals from general over-the-counter supplements.',
-    citationVerified: false,
     volumeL: 0.2,
   }),
   l({
@@ -185,7 +177,6 @@ export const liquidItems: LiquidItem[] = [
     drainHazard: { severity: 'major', mechanism: 'Solidifying animal fat is one of the classic causes of home kitchen-sink and lateral sewer-line clogs ("fatbergs" at municipal scale).' },
     explanation: 'Cooking fat should be cooled, contained in a sealed jar or can, and thrown in the trash — never poured down the sink, where it solidifies and blocks pipes; some cities offer FOG (fats/oils/grease) collection as an alternative.',
     factCitation: 'Fats/oils/grease (FOG) buildup from cooking fat is widely cited as a cause of both home plumbing clogs and large municipal sewer blockages ("fatbergs").',
-    citationVerified: false,
     volumeL: 0.3,
   }),
   l({
@@ -194,6 +185,5 @@ export const liquidItems: LiquidItem[] = [
     drainHazard: { severity: 'minor', mechanism: 'Dilute ammonia cleaner is lower-risk down the drain than concentrated chemicals, but must never be combined with bleach — the reaction produces toxic chloramine gas.' },
     explanation: 'A small amount of already-diluted ammonia cleaner is generally low-risk, but the critical rule is never mixing it with bleach or bleach-based products, which produces dangerous toxic gas — a mixing hazard, not just a wrong-bin problem.',
     factCitation: 'Mixing ammonia and bleach produces toxic chloramine vapors and is a well-documented household chemical safety hazard independent of disposal method.',
-    citationVerified: false,
   }),
 ];
