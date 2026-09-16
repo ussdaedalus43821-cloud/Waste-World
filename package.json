@@ -1,0 +1,17 @@
+{
+  "name": "waste-world",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Educational household recycling/waste-sorting simulation. React-free by environment constraint: plain TypeScript compiled to native browser ES modules, no bundler.",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "serve . -l 5173",
+    "dev": "tsc --watch & serve . -l 5173"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "serve": "^14.2.0"
+  }
+}
